@@ -16,10 +16,39 @@ header {
     justify-content: flex-end;
 }
 
+.profile {
+    text-align: center;
+    margin: 10px;
+}
+
+.profile-edit-icon {
+    color: var(--font-color);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.profile-info-wrapper {
+    color: var(--font-color);
+
+}
+
+.profile-info {
+    margin-top: 5px;
+}
+
+.profile-info-name {
+   font-weight: 600;
+   font-size: larger;
+
+}
+
 .profile-image {
+    cursor: pointer;
     width: 75px;
     border-radius: 50%;
     border: 5px solid var(--main);
+
 }
 
 main {
@@ -28,7 +57,7 @@ main {
 }
 
 .week {
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
 }
@@ -87,8 +116,7 @@ main {
 
 .weekday-time-slot.disabled {
     background-color: var(--secondary-faided);
-    height: 46px;
-    line-height: 3; /* height and line-height to be changed*/
+    height: 46px; /* height and line-height to be changed*/
 }
 
 .time {
