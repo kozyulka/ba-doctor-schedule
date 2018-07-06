@@ -1,124 +1,247 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
     <meta charset="utf-8" />
     <title>Schedule</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
     <script src="index.js"></script>
 </head>
+
 <body>
     <main>
-        <div class="weekdays-wrp">
+        <div class="week">
             <div class="weekday">
-                <div class="weekday-name">Monday</div>
-                <div class="weekday-addtime">Add time slot</div>
-                <div class="weekday-time-wrp">
-                    <div class="weekday-time-slot"></div>
-                    <div class="weekday-time-slot"></div>
-                    <div class="weekday-time-slot"></div>
+                <div class="weekday-main-wrapper">
+                    <div class="weekday-main">
+                        <div class="weekday-main-name">Mon</div>
+                        <div class="weekday-main-addtime">
+                            <span class="fas fa-plus"></span>
+                            <span>Add time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weekday-time-wrapper">
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>6:30</span>
+                                -
+                                <span>16:00</span>
+                        </div>
+
+                    </div>
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>21:00</span>
+                                -
+                                <span class="night">05:00
+                                        <i class="far fa-moon"></i>
+                                </span>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="weekday">
-                <div class="weekday-name">Tuesday</div>
-                <div class="weekday-addtime">Add time slot</div>
-                <div class="weekday-time-wrp">
-                    <div class="weekday-time-slot"></div>
-                    <div class="weekday-time-slot"></div>
-                    <div class="weekday-time-slot"></div>
+                <div class="weekday-main-wrapper">
+                    <div class="weekday-main">
+                        <div class="weekday-main-name">Tue</div>
+                        <div class="weekday-main-addtime">
+                            <span class="fas fa-plus"></span>
+                            <span>Add time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weekday-time-wrapper">
+                    <div class="weekday-time-slot disabled">
+                        <div class="time">
+                                <span>00:00</span>
+                                -
+                                <span>05:00</span>
+                        </div>
+                    </div>
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <div class="weekday">
-                <div class="weekday-name">Wednesday</div>
-                <div class="weekday-addtime">Add time slot</div>
-                <div class="weekday-time-wrp">
-                    <div class="weekday-time-slot">
-                        <span class="time">11:30</span>
-                        to
-                        <span class="time">16:30</span>
-                    </div>
-                    <div class="weekday-time-slot">
-                            <span class="time">20:30</span>
-                            to
-                            <span class="time">02:30</span>
+                <div class="weekday-main-wrapper">
+                    <div class="weekday-main">
+                        <div class="weekday-main-name">Wed</div>
+                        <div class="weekday-main-addtime">
+                            <span class="fas fa-plus"></span>
+                            <span>Add time</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-name">Thursday</div>
-                <div class="weekday-addtime">Add time slot</div>
-                <div class="weekday-time-wrp">
+                <div class="weekday-time-wrapper">
                     <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
                     </div>
                     <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
-                    </div>
-                    <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-name">Friday</div>
-                <div class="weekday-addtime">Add time slot</div>
-                <div class="weekday-time-wrp">
-                    <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
-                    </div>
-                    <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="weekday">
-                <div class="weekday-name">Saturday</div>
-                <div class="weekday-addtime">Add time slot</div>
-                <div class="weekday-time-wrp">
-                    <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
-                    </div>
-                    <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
-                    </div>
-                    <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="weekday">
-                <div class="weekday-name">Sunday</div>
-                <div class="weekday-addtime">Add time slot</div>
-                <div class="weekday-time-wrp">
+                <div class="weekday-main-wrapper">
+                    <div class="weekday-main">
+                        <div class="weekday-main-name">Thu</div>
+                        <div class="weekday-main-addtime">
+                            <span class="fas fa-plus"></span>
+                            <span>Add time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weekday-time-wrapper">
                     <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
                     </div>
                     <div class="weekday-time-slot">
-                            <span class="time">00:00</span>
-                            to
-                            <span class="time">00:00</span>
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
+                    </div>
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weekday">
+                <div class="weekday-main-wrapper">
+                    <div class="weekday-main">
+                        <div class="weekday-main-name">Fri</div>
+                        <div class="weekday-main-addtime">
+                            <span class="fas fa-plus"></span>
+                            <span>Add time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weekday-time-wrapper">
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
+                    </div>
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weekday">
+                <div class="weekday-main-wrapper">
+                    <div class="weekday-main">
+                        <div class="weekday-main-name">Sat</div>
+                        <div class="weekday-main-addtime">
+                            <span class="fas fa-plus"></span>
+                            <span>Add time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weekday-time-wrapper">
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
+                    </div>
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
+                    </div>
+                    <div class="weekday-time-slot">
+                        <i class="far fa-edit"></i>
+                        <div class="time">
+                                <span>10:30</span>
+                                -
+                                <span>20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weekday">
+                <div class="weekday-main-wrapper">
+                    <div class="weekday-main">
+                        <div class="weekday-main-name">Sun</div>
+                        <div class="weekday-main-addtime">
+                            <span class="fas fa-plus"></span>
+                            <span>Add time</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weekday-time-wrapper">
+                    <div class="weekday-time-slot">
+                            <i class="far fa-edit"></i>
+                            <div class="time">
+                                    <span>10:30</span>
+                                    -
+                                    <span>20:00</span>
+                            </div>
+                    </div>
+                    <div class="weekday-time-slot">
+                            <i class="far fa-edit"></i>
+                            <div class="time">
+                                    <span>10:30</span>
+                                    -
+                                    <span>20:00</span>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="timetable"></div>
     </main>
 </body>
+
 </html>

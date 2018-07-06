@@ -1,0 +1,90 @@
+body {
+ background-color: #FCFCFC;
+ font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.week {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.weekday {
+    flex: 1;
+    margin: 1px;
+}
+
+.weekday-main-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.weekday-main {
+    background-color: #EF6F6C;
+    color: #FCFCFC;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10%;
+    line-height: 1.5;
+}
+
+.weekday-main-name {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.weekday-main-addtime {
+    line-height: 3;
+    text-align: center;
+    font-size: 1.5vw;
+    border: 2px solid  #FCFCFC;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.weekday-time-wrapper {
+    color: #5D576B;
+    text-align: center;
+}
+
+.weekday-time-slot {
+    background-color: #FCE4E4;
+    margin-top: 2px;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.weekday-time-slot.disabled {
+    background-color: #E6D0D0;
+    height: 46px;
+    line-height: 3; /* height and line-height to be changed*/
+
+}
+
+.time {
+    font-size: 1.8vw;
+}
+
+.night i{
+    font-size: 1.3vw;
+    position: relative;
+    bottom: 9px;
+    right: 2px;
+
+}
+
+i.far.fa-edit {
+    cursor: pointer;
+}
