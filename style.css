@@ -1,6 +1,25 @@
+:root {
+    --main: #EF6F6C;
+    --secondary: #FCE4E4;
+    --secondary-faided: #E6D0D0;
+    --font-color: #5D576B;
+    --background-color: #FCFCFC;
+}
+
 body {
- background-color: #FCFCFC;
+ background-color: var(--background-color);
  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-image {
+    width: 75px;
+    border-radius: 50%;
+    border: 5px solid var(--main);
 }
 
 main {
@@ -9,7 +28,7 @@ main {
 }
 
 .week {
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
 }
@@ -26,8 +45,8 @@ main {
 }
 
 .weekday-main {
-    background-color: #EF6F6C;
-    color: #FCFCFC;
+    background-color: var(--main);
+    color: var(--background-color);
     padding: 10px;
     position: absolute;
     top: 0;
@@ -49,7 +68,7 @@ main {
     line-height: 3;
     text-align: center;
     font-size: 1.5vw;
-    border: 2px solid  #FCFCFC;
+    border: 2px solid  var(--background-color);
     border-radius: 5%;
     cursor: pointer;
 }
@@ -60,14 +79,14 @@ main {
 }
 
 .weekday-time-slot {
-    background-color: #FCE4E4;
+    background-color: var(--secondary);
     margin-top: 2px;
     border-radius: 10px;
     padding: 10px 5px;
 }
 
 .weekday-time-slot.disabled {
-    background-color: #E6D0D0;
+    background-color: var(--secondary-faided);
     height: 46px;
     line-height: 3; /* height and line-height to be changed*/
 }
