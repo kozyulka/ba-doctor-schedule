@@ -1,0 +1,23 @@
+{
+  "name": "timetable",
+  "homepage": "https://github.com/kozyulka/ba-doctor-schedule",
+  "authors": [
+    "Daryna Gavrylenko <deakozyulka@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.2"
+  }
+}

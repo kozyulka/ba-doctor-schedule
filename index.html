@@ -4,18 +4,29 @@
 <head>
     <meta charset="utf-8" />
     <title>Schedule</title>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+    />
+
+
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
-    <script src="index.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
     <header>
         <div class="profile">
             <div class="profile-edit-icon">
-                    <i class="far fa-edit"></i>
+                <i class="far fa-edit" title="Edit profile"></i>
             </div>
             <img class="profile-image" src="assests/profile-picture.jpg" alt="profile picture">
             <div class="profile-info-wrapper">
@@ -31,7 +42,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Mon</div>
-                        <div class="weekday-main-addtime">
+                        <div class="weekday-main-addtime" title="Add availability time">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -41,21 +52,19 @@
                     <div class="weekday-time-slot">
                         <i class="far fa-edit"></i>
                         <div class="time">
-                                <span>6:30</span>
-                                -
-                                <span>16:00</span>
+                            <span>6:30</span>
+                            -
+                            <span>16:00</span>
                         </div>
-
                     </div>
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>21:00</span>
-                                -
-                                <span class="night">05:00
-                                        <i class="far fa-moon"></i>
-                                </span>
-
+                            <span>21:00</span>
+                            -
+                            <span class="night">05:00
+                                <i class="far fa-moon"></i>
+                            </span>
                         </div>
                     </div>
 
@@ -65,7 +74,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Tue</div>
-                        <div class="weekday-main-addtime">
+                        <div class="weekday-main-addtime" title="Add availability time">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -74,29 +83,26 @@
                 <div class="weekday-time-wrapper">
                     <div class="weekday-time-slot disabled">
                         <div class="time">
-                                <span>00:00</span>
-                                -
-                                <span>05:00</span>
+                            <span>00:00</span>
+                            -
+                            <span>05:00</span>
                         </div>
                     </div>
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
-
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <div class="weekday">
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Wed</div>
-                        <div class="weekday-main-addtime">
+                        <div class="weekday-main-addtime" title="Add availability time">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -104,19 +110,19 @@
                 </div>
                 <div class="weekday-time-wrapper">
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                     <div class="weekday-time-slot">
                         <i class="far fa-edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                 </div>
@@ -125,7 +131,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Thu</div>
-                        <div class="weekday-main-addtime">
+                        <div class="weekday-main-addtime" title="Add availability time">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -133,27 +139,27 @@
                 </div>
                 <div class="weekday-time-wrapper">
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                 </div>
@@ -162,7 +168,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Fri</div>
-                        <div class="weekday-main-addtime">
+                        <div class="weekday-main-addtime" title="Add availability time">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -170,19 +176,19 @@
                 </div>
                 <div class="weekday-time-wrapper">
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                 </div>
@@ -191,7 +197,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Sat</div>
-                        <div class="weekday-main-addtime">
+                        <div class="weekday-main-addtime" title="Add availability time">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -199,27 +205,27 @@
                 </div>
                 <div class="weekday-time-wrapper">
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                     <div class="weekday-time-slot">
                         <i class="far fa-edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                     <div class="weekday-time-slot">
-                        <i class="far fa-edit"></i>
+                        <i class="far fa-edit" title="Edit"></i>
                         <div class="time">
-                                <span>10:30</span>
-                                -
-                                <span>20:00</span>
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
                         </div>
                     </div>
                 </div>
@@ -228,7 +234,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Sun</div>
-                        <div class="weekday-main-addtime">
+                        <div class="weekday-main-addtime" title="Add availability time">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -236,25 +242,65 @@
                 </div>
                 <div class="weekday-time-wrapper">
                     <div class="weekday-time-slot">
-                            <i class="far fa-edit"></i>
-                            <div class="time">
-                                    <span>10:30</span>
-                                    -
-                                    <span>20:00</span>
-                            </div>
-                    </div>
-                    <div class="weekday-time-slot">
-                            <i class="far fa-edit"></i>
-                            <div class="time">
-                                    <span>10:30</span>
-                                    -
-                                    <span>20:00</span>
-                            </div>
+                        <i class="far fa-edit" title="Edit"></i>
+                        <div class="time">
+                            <span>10:30</span>
+                            -
+                            <span>20:00</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </main>
+    <div class="background">
+        <div class="modal-wrapper">
+            <div class="new-shift-modal">
+                <div class="time-picker">
+                    <div class="time-picker-text">Start</div>
+                    <div class="time-picker-clock">
+                        <div class="container">
+                            <div class="row">
+                                <div class='col-md-2'>
+                                    <div class="form-group">
+                                        <div class='input-group date datetimepicker3'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon" title="Choose start time">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-picker">
+                    <div class="time-picker-text">End</div>
+                    <div class="time-picker-clock">
+                        <div class="container">
+                            <div class="row">
+                                <div class='col-md-2'>
+                                    <div class="form-group">
+                                        <div class='input-group date datetimepicker3'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon" title="Choose end time">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-picker-controls">
+                    <div class="time-picker-button" title="Cancel adding time interval">Cancel</div>
+                    <div class="time-picker-button button-add" title="Add availability time">Add</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
