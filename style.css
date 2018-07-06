@@ -70,7 +70,6 @@ main {
     background-color: #E6D0D0;
     height: 46px;
     line-height: 3; /* height and line-height to be changed*/
-
 }
 
 .time {
@@ -87,4 +86,11 @@ main {
 
 i.far.fa-edit {
     cursor: pointer;
+}
+/* MEDIA */
+
+@media screen and (max-width: 970px) {
+    .time {
+        font-size: 1.7vw;
+    }
 }
