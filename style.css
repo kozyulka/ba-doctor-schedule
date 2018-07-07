@@ -104,6 +104,7 @@ main {
 .weekday-time-wrapper {
     color: #5D576B;
     text-align: center;
+    position: relative;
 }
 
 .weekday-time-slot {
@@ -111,7 +112,7 @@ main {
     margin-top: 2px;
     border-radius: 10px;
     padding: 10px 5px;
-    min-height: 55px;
+    min-height: 59px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -119,7 +120,7 @@ main {
 
 .weekday-time-slot.disabled {
     background-color: var(--secondary-faided);
-    height: 46px; /* height and line-height to be changed*/
+    /* height: 46px; height and line-height to be changed */
     cursor: help;
 }
 
@@ -136,8 +137,11 @@ main {
     margin-left: 4px;
 }
 
-i.far.fa-edit {
+.weekday-time-slot .fa-edit {
     cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 12px;
 }
 
 /* MODAL AND ALERTS */
@@ -338,7 +342,7 @@ i.far.fa-edit {
         min-height: 111px;
         flex-direction: column;
         justify-content: space-around;
-        min-width: 70px;
+        min-width: 80px;
         margin-left: 2px;
         margin-top: 0;
     }
