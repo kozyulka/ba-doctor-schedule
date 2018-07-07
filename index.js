@@ -52,7 +52,7 @@ function addTimeSlot() {
         (hoursStart === hoursEnd && minutesStart >= minutesEnd) ||
         hoursStart > hoursEnd
     ) {
-        openAlert('The hours you selected end on the next day');
+        openAlert('Selected hours end on the next day');
     }
 
     closeModal();
