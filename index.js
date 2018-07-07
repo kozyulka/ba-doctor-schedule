@@ -112,6 +112,7 @@ function createNextDayTimeSlot(endTime) {
     var divider = document.createTextNode(' - ');
 
     timeSlot.className = 'weekday-time-slot disabled';
+    timeSlot.setAttribute('title', 'This time-slot was added automatically from the previous day and cannot be edited. You can change hours in the previous day time-slot');
     time.className = 'time';
 
     timeSlot.appendChild(time);
