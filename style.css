@@ -36,7 +36,7 @@ header {
 
 .profile-info-name {
    font-weight: 600;
-   font-size: larger;
+   font-size: 24px;
    margin-top: 5px
 }
 
@@ -80,20 +80,23 @@ main {
     right: 0;
     border-radius: 12px;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .weekday-main-name {
     text-transform: uppercase;
     text-align: center;
-    font-size: 4vw;
+    font-size: 48px;
     font-weight: 600;
 }
 
 .weekday-main-addtime {
-    line-height: 3;
+    line-height: 2.7;
     text-align: center;
-    font-size: 1.5vw;
-    border: 2px solid  var(--background-color);
+    font-size: 16px;
+    border: 2px solid var(--background-color);
     border-radius: 7px;
     cursor: pointer;
 }
@@ -108,6 +111,10 @@ main {
     margin-top: 2px;
     border-radius: 10px;
     padding: 10px 5px;
+    min-height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .weekday-time-slot.disabled {
@@ -117,11 +124,11 @@ main {
 }
 
 .time {
-    font-size: 1.8vw;
+    font-size: 18px;
 }
 
 .night i{
-    font-size: 1.3vw;
+    font-size: 15px;
     position: relative;
     bottom: 9px;
     right: 2px;
@@ -267,27 +274,77 @@ i.far.fa-edit {
 }
 
 /* MEDIA */
-
-@media screen and (max-width: 970px) {
-    .time {
-        font-size: 1.7vw;
-    }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1024px) {
     .weekday-main-name {
-        font-size: 55px;
-    }
-
-    .time {
-        font-size: 20px;
+        font-size: 34px;
     }
 
     .weekday-main-addtime {
-        font-size: 20px;
+        font-size: 13px;
+    }
+
+    .time {
+        font-size: 13px;
     }
 
     .night i {
-        font-size: 17px
+        font-size: 11px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: flex-start;
+    }
+
+    .profile {
+        display: flex;
+    }
+
+    .profile-image {
+        max-height: 80px;
+    }
+
+    .profile-info-wrapper {
+        line-height: 1.2;
+        margin-left: 15px;
+        font-size: 22px;
+    }
+
+    .profile-info-name {
+        margin-top: 0;
+    }
+
+    .week {
+        flex-direction: column;
+    }
+
+    .weekday {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .weekday-main-wrapper {
+        padding-top: initial;
+        height: 112px;
+        width: 112px;
+    }
+
+    .weekday-time-wrapper {
+        display: flex;
+    }
+
+    .weekday-time-slot {
+        min-height: 111px;
+        flex-direction: column;
+        justify-content: space-around;
+        min-width: 70px;
+        margin-left: 2px;
+        margin-top: 0;
+    }
+
+    .time {
+        display: flex;
+        flex-direction: column;
     }
 }
