@@ -133,7 +133,7 @@ main {
     bottom: 9px;
     right: 2px;
     cursor: help;
-
+    margin-left: 4px;
 }
 
 i.far.fa-edit {
