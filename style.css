@@ -19,6 +19,7 @@ header {
 .profile {
     text-align: center;
     margin: 10px;
+    font-size: 20px;
 }
 
 .profile-edit-icon {
@@ -30,6 +31,7 @@ header {
 
 .profile-info-wrapper {
     color: var(--font-color);
+    margin-top: 10px;
 
 }
 
@@ -45,7 +47,7 @@ header {
 
 .profile-image {
     cursor: pointer;
-    width: 75px;
+    width: 80px;
     border-radius: 50%;
     border: 5px solid var(--main);
 }
@@ -119,6 +121,7 @@ main {
 .weekday-time-slot.disabled {
     background-color: var(--secondary-faided);
     height: 46px; /* height and line-height to be changed*/
+    cursor: help;
 }
 
 .time {
@@ -130,6 +133,7 @@ main {
     position: relative;
     bottom: 9px;
     right: 2px;
+    cursor: help;
 
 }
 
@@ -139,13 +143,14 @@ i.far.fa-edit {
 
 /* MODAL */
 .background {
+    display: none;
     background-color: rgba(0, 0, 0, .5);
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
@@ -237,5 +242,23 @@ i.far.fa-edit {
 @media screen and (max-width: 970px) {
     .time {
         font-size: 1.7vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .weekday-main-name {
+        font-size: 55px;
+    }
+
+    .time {
+        font-size: 20px;
+    }
+
+    .weekday-main-addtime {
+        font-size: 20px;
+    }
+
+    .night i {
+        font-size: 17px
     }
 }
