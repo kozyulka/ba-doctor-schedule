@@ -42,7 +42,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Mon</div>
-                        <div class="weekday-main-addtime" title="Add time when you are available">
+                        <div class="weekday-main-addtime" title="Add time when you are available" onclick="openModal('mon')">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -74,7 +74,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Tue</div>
-                        <div class="weekday-main-addtime" title="Add time when you are available">
+                        <div class="weekday-main-addtime" title="Add time when you are available" onclick="openModal('tue')">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -102,7 +102,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Wed</div>
-                        <div class="weekday-main-addtime" title="Add time when you are available">
+                        <div class="weekday-main-addtime" title="Add time when you are available" onclick="openModal('wed')">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -131,7 +131,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Thu</div>
-                        <div class="weekday-main-addtime" title="Add time when you are available">
+                        <div class="weekday-main-addtime" title="Add time when you are available" onclick="openModal('thu')">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -168,7 +168,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Fri</div>
-                        <div class="weekday-main-addtime" title="Add time when you are available">
+                        <div class="weekday-main-addtime" title="Add time when you are available" onclick="openModal('fri')">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -197,7 +197,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Sat</div>
-                        <div class="weekday-main-addtime" title="Add time when you are available">
+                        <div class="weekday-main-addtime" title="Add time when you are available" onclick="openModal('sat')">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -234,7 +234,7 @@
                 <div class="weekday-main-wrapper">
                     <div class="weekday-main">
                         <div class="weekday-main-name">Sun</div>
-                        <div class="weekday-main-addtime" title="Add time when you are available">
+                        <div class="weekday-main-addtime" title="Add time when you are available" onclick="openModal('sun')">
                             <span class="fas fa-plus"></span>
                             <span>Add time</span>
                         </div>
@@ -254,17 +254,17 @@
         </div>
         </div>
     </main>
-    <div class="background">
+    <div id="timepicker-container" class="background">
         <div class="modal-wrapper">
             <div class="new-shift-modal">
                 <div class="time-picker">
-                    <div class="time-picker-text">Start</div>
+                    <div class="time-picker-title">Start</div>
                     <div class="time-picker-clock">
                         <div class="container">
                             <div class="row">
                                 <div class='col-md-2'>
                                     <div class="form-group">
-                                        <div class='input-group date datetimepicker3'>
+                                        <div id="timepicker-start" class='input-group date datetimepicker3'>
                                             <input type='text' class="form-control" />
                                             <span class="input-group-addon" title="Choose start time">
                                                 <span class="glyphicon glyphicon-time"></span>
@@ -277,13 +277,13 @@
                     </div>
                 </div>
                 <div class="time-picker">
-                    <div class="time-picker-text">End</div>
+                    <div class="time-picker-title">End</div>
                     <div class="time-picker-clock">
                         <div class="container">
                             <div class="row">
                                 <div class='col-md-2'>
                                     <div class="form-group">
-                                        <div class='input-group date datetimepicker3'>
+                                        <div id="timepicker-end" class='input-group date datetimepicker3'>
                                             <input type='text' class="form-control" />
                                             <span class="input-group-addon" title="Choose end time">
                                                 <span class="glyphicon glyphicon-time"></span>
@@ -295,12 +295,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="time-picker-controls">
-                    <div class="time-picker-button" title="Cancel adding time interval">Cancel</div>
-                    <div class="time-picker-button button-add" title="Add time when you are available">Add</div>
+                <div class="modal-controls">
+                    <div class="modal-button" title="Cancel adding time interval" onclick="closeModal()">Cancel</div>
+                    <div class="modal-button button-add" title="Add time when you are available" onclick="addTimeSlot()">Add</div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="alert-container" class="background">
+        <div class="alert-wrapper">
+            <div class="alert-title">Attention!</div>
+            <div class="alert-message"></div>
+            <div class="modal-controls">
+                <div class="modal-button button-ok" onclick="closeAlert()">OK</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

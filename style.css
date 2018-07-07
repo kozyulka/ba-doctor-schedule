@@ -31,18 +31,13 @@ header {
 
 .profile-info-wrapper {
     color: var(--font-color);
-    margin-top: 10px;
-
-}
-
-.profile-info {
-    margin-top: 5px;
+    line-height: 1.7;
 }
 
 .profile-info-name {
    font-weight: 600;
    font-size: larger;
-
+   margin-top: 5px
 }
 
 .profile-image {
@@ -53,13 +48,11 @@ header {
 }
 
 main {
-
     max-width: 1200px;
     margin: auto;
 }
 
 .week {
-
     margin-top: 5%;
     display: flex;
     justify-content: center;
@@ -88,7 +81,6 @@ main {
     border-radius: 12px;
     line-height: 1.5;
 }
-
 
 .weekday-main-name {
     text-transform: uppercase;
@@ -141,7 +133,8 @@ i.far.fa-edit {
     cursor: pointer;
 }
 
-/* MODAL */
+/* MODAL AND ALERTS */
+
 .background {
     display: none;
     background-color: rgba(0, 0, 0, .5);
@@ -150,9 +143,14 @@ i.far.fa-edit {
     left: 0;
     bottom: 0;
     right: 0;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
+    z-index: 2;
+}
+
+#timepicker-background,
+#alert-background {
+    display: none;
 }
 
 .modal-wrapper {
@@ -162,6 +160,10 @@ i.far.fa-edit {
     height: 300px;
     width: 300px;
     border-radius: 12px;
+}
+
+.modal-wrapper .col-md-2{
+    width: 100%;
 }
 
 .new-shift-modal {
@@ -206,8 +208,8 @@ i.far.fa-edit {
     border-color: var(--main);
 }
 
-.time-picker-text {
-    font-size: 2vw;
+.time-picker-title {
+    font-size: 23px;
 }
 
 .time-picker-clock {
@@ -218,23 +220,50 @@ i.far.fa-edit {
     width: initial;
 }
 
-.time-picker-controls {
+.modal-controls {
     display: flex;
     justify-content: space-around;
 }
 
-.time-picker-button {
+.modal-button {
     border: 2px solid var(--main);
     border-radius: 8px;
     padding: 7px 17px;
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .button-add {
     background-color: var(--main);
     color: var(--background-color);
+}
+
+.alert-wrapper {
+    border: 5px solid #EF6F6C;
+    background-color: #FCFCFC;
+    color: #EF6F6C;
+    border-radius: 12px;
+    padding: 10px;
+    line-height: 2;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.alert-title {
+    font-size:35px;
+}
+
+.alert-message {
+    color: var(--font-color)
+}
+
+.button-ok {
+    line-height: 1.5;
+    background-color: var(--main);
+    color: var(--background-color);
+    margin-top: 20px;
 }
 
 /* MEDIA */
