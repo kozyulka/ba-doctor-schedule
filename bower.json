@@ -15,9 +15,32 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^3.3.7",
     "eonasdan-bootstrap-datetimepicker": "^4.17.47",
-    "jquery": "^3.3.1",
+    "jquery": "^2.2.4",
     "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "bower-installer": "^1.3.6"
+  },
+  "install": {
+    "path": "vendor",
+    "ignore": ["bower-installer"],
+    "sources": {
+      "jquery": [
+        "bower_components/jquery/dist/jquery.min.js"
+      ],
+      "moment": [
+        "bower_components/moment/min/moment.min.js"
+      ],
+      "bootstrap": [
+        "bower_components/bootstrap/dist/js/bootstrap.min.js",
+        "bower_components/bootstrap/dist/css/bootstrap.min.css"
+      ],
+      "eonasdan-bootstrap-datetimepicker": [
+        "bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js",
+        "bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+      ]
+    }
   }
 }
