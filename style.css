@@ -101,6 +101,17 @@ main {
     cursor: pointer;
 }
 
+.weekday-main-addtime:hover {
+    opacity: .5;
+}
+
+.weekday-main-addtime:active {
+    border: 2px solid var(--main);
+    color: var(--main);
+    background-color: var(--background-color);
+    opacity: 1;
+}
+
 .weekday-time-wrapper {
     color: #5D576B;
     text-align: center;
@@ -237,7 +248,6 @@ main {
 }
 
 .modal-button {
-    border: 2px solid var(--main);
     border-radius: 8px;
     padding: 7px 17px;
     font-weight: 600;
@@ -245,9 +255,35 @@ main {
     cursor: pointer;
 }
 
+.button-cancel {
+    border: 2px solid var(--main);
+}
+
+.button-cancel:hover {
+    opacity: .5;
+}
+
+.button-cancel:active {
+    border: 2px solid var(--background-color);
+    color: var(--background-color);
+    background-color: var(--main);
+    opacity: 1;
+}
+
 .button-add {
     background-color: var(--main);
     color: var(--background-color);
+}
+
+.button-add:hover {
+    opacity: .5;
+}
+
+.button-add:active {
+    border: 2px solid var(--main);
+    color: var(--main);
+    background-color: var(--background-color);
+    opacity: 1;
 }
 
 .alert-wrapper {
@@ -275,6 +311,17 @@ main {
     background-color: var(--main);
     color: var(--background-color);
     margin-top: 20px;
+}
+
+.button-ok:hover {
+    opacity: .5;
+}
+
+.button-ok:active {
+    border: 2px solid var(--main);
+    color: var(--main);
+    background-color: var(--background-color);
+    opacity: 1;
 }
 
 /* MEDIA */
