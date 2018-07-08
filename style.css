@@ -27,6 +27,11 @@ header {
     position: absolute;
     top: 10px;
     right: 15px;
+    cursor: pointer;
+}
+
+.profile-edit-icon:hover {
+    color: var(--main);
 }
 
 .profile-info-wrapper {
@@ -45,6 +50,10 @@ header {
     width: 80px;
     border-radius: 50%;
     border: 5px solid var(--main);
+}
+
+.profile-image:hover {
+    opacity: .5;
 }
 
 main {
@@ -131,7 +140,6 @@ main {
 
 .weekday-time-slot.disabled {
     background-color: var(--secondary-faided);
-    /* height: 46px; height and line-height to be changed */
     cursor: help;
 }
 
@@ -153,6 +161,10 @@ main {
     position: absolute;
     top: 8px;
     left: 12px;
+}
+
+.weekday-time-slot .fa-edit:hover {
+    color: var(--main);
 }
 
 /* MODAL AND ALERTS */
@@ -228,6 +240,17 @@ main {
     background-color: var(--main);
     color: var(--background-color);
     border-color: var(--main);
+}
+
+.time-picker .input-group-addon:hover {
+    opacity: .5;
+}
+
+.time-picker .input-group-addon:active {
+    border: 2px solid var(--main);
+    color: var(--main);
+    background-color: var(--background-color);
+    opacity: 1;
 }
 
 .time-picker-title {
@@ -311,6 +334,7 @@ main {
     background-color: var(--main);
     color: var(--background-color);
     margin-top: 20px;
+    border: 2px solid var(--main);
 }
 
 .button-ok:hover {
